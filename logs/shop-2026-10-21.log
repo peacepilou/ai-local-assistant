@@ -1,0 +1,250 @@
+2026-10-21 18:30:08 INFO  auth     event=login order=A-4481 client=lucas.faure@example.com ip=92.104.15.24
+2026-10-21 18:30:27 INFO  cart     event=add order=A-4481 sku=CHURROS qty=2 price=3.9
+2026-10-21 18:30:46 INFO  checkout event=checkout order=A-4481 client=lucas.faure@example.com phone="06 39 98 85 64" address="84 rue Royale, Tours" coupons=none total=7.80
+2026-10-21 18:31:01 INFO  payment  event=payment_ok order=A-4481 amount=7.80
+2026-10-21 18:31:09 INFO  auth     event=login order=A-4482 client=lea.blanc@example.org ip=92.143.142.40
+2026-10-21 18:31:23 INFO  cart     event=add order=A-4482 sku=TACO-XL qty=2 price=8.9
+2026-10-21 18:31:36 INFO  cart     event=add order=A-4482 sku=TACO-XL qty=3 price=8.9
+2026-10-21 18:31:55 INFO  checkout event=checkout order=A-4482 client=lea.blanc@example.org phone="06 39 98 99 64" address="94 rue Colbert, Tours" coupons=none total=44.50
+2026-10-21 18:32:00 INFO  payment  event=payment_ok order=A-4482 amount=44.50
+2026-10-21 18:32:23 INFO  auth     event=login order=A-4483 client=noah.garcia@example.net ip=92.190.35.12
+2026-10-21 18:32:32 INFO  cart     event=add order=A-4483 sku=NACHOS qty=2 price=4.2
+2026-10-21 18:32:48 INFO  checkout event=checkout order=A-4483 client=noah.garcia@example.net phone="06 39 98 83 34" address="49 rue Colbert, Tours" coupons=none total=8.40
+2026-10-21 18:33:10 INFO  payment  event=payment_ok order=A-4483 amount=8.40
+2026-10-21 18:33:32 INFO  auth     event=login order=A-4484 client=adam.lefevre@example.net ip=92.182.36.156
+2026-10-21 18:33:39 INFO  cart     event=add order=A-4484 sku=CHURROS qty=2 price=3.9
+2026-10-21 18:34:03 INFO  checkout event=checkout order=A-4484 client=adam.lefevre@example.net phone="06 39 98 99 97" address="35 rue Royale, Tours" coupons=none total=7.80
+2026-10-21 18:34:22 INFO  payment  event=payment_ok order=A-4484 amount=7.80
+2026-10-21 18:34:42 INFO  auth     event=login order=A-4485 client=hugo.lefevre@example.com ip=92.134.33.55
+2026-10-21 18:34:50 INFO  cart     event=add order=A-4485 sku=HORCHATA qty=2 price=3.5
+2026-10-21 18:35:12 INFO  cart     event=coupon order=A-4485 code=TACOS10 discount=10.0
+2026-10-21 18:35:29 INFO  cart     event=coupon order=A-4485 code=TACOS10 discount=10.0
+2026-10-21 18:35:45 INFO  checkout event=checkout order=A-4485 client=hugo.lefevre@example.com phone="06 39 98 50 61" address="118 rue Royale, Tours" coupons=TACOS10,TACOS10 total=-13.00
+2026-10-21 18:35:51 ERROR payment  event=payment_failed order=A-4485 client=hugo.lefevre@example.com reason=invalid_amount
+2026-10-21 18:36:00 INFO  auth     event=login order=A-4486 client=noah.bonnet@example.net ip=92.174.204.93
+2026-10-21 18:36:04 INFO  cart     event=add order=A-4486 sku=CHURROS qty=3 price=3.9
+2026-10-21 18:36:10 INFO  checkout event=checkout order=A-4486 client=noah.bonnet@example.net phone="06 39 98 84 64" address="111 rue Nationale, Tours" coupons=none total=11.70
+2026-10-21 18:36:32 INFO  payment  event=payment_ok order=A-4486 amount=11.70
+2026-10-21 18:36:51 INFO  auth     event=login order=A-4487 client=sacha.petit@example.fr ip=92.159.128.249
+2026-10-21 18:37:14 INFO  cart     event=add order=A-4487 sku=HORCHATA qty=2 price=3.5
+2026-10-21 18:37:36 INFO  checkout event=checkout order=A-4487 client=sacha.petit@example.fr phone="06 39 98 58 86" address="97 rue Colbert, Tours" coupons=none total=7.00
+2026-10-21 18:37:48 INFO  payment  event=payment_ok order=A-4487 amount=7.00
+2026-10-21 18:38:10 INFO  auth     event=login order=A-4488 client=zoe.moreau@example.net ip=92.164.54.223
+2026-10-21 18:38:16 INFO  cart     event=add order=A-4488 sku=HORCHATA qty=2 price=3.5
+2026-10-21 18:38:35 INFO  cart     event=add order=A-4488 sku=NACHOS qty=2 price=4.2
+2026-10-21 18:38:56 INFO  checkout event=checkout order=A-4488 client=zoe.moreau@example.net phone="06 39 98 74 32" address="118 rue Nationale, Tours" coupons=none total=15.40
+2026-10-21 18:39:08 INFO  payment  event=payment_ok order=A-4488 amount=15.40
+2026-10-21 18:39:33 INFO  auth     event=login order=A-4489 client=adam.chevalier@example.net ip=92.130.40.22
+2026-10-21 18:39:52 INFO  cart     event=add order=A-4489 sku=BURRITO qty=1 price=9.8
+2026-10-21 18:39:58 INFO  cart     event=coupon order=A-4489 code=TACOS10 discount=10.0
+2026-10-21 18:40:04 INFO  cart     event=coupon order=A-4489 code=TACOS10 discount=10.0
+2026-10-21 18:40:14 INFO  checkout event=checkout order=A-4489 client=adam.chevalier@example.net phone="06 39 98 40 17" address="71 rue Nationale, Tours" coupons=TACOS10,TACOS10 total=-10.20
+2026-10-21 18:40:32 ERROR payment  event=payment_failed order=A-4489 client=adam.chevalier@example.net reason=invalid_amount
+2026-10-21 18:40:50 INFO  auth     event=login order=A-4490 client=manon.chevalier@example.org ip=92.185.191.113
+2026-10-21 18:40:59 INFO  cart     event=add order=A-4490 sku=TACO-XL qty=2 price=8.9
+2026-10-21 18:41:01 INFO  cart     event=add order=A-4490 sku=TACO-XL qty=3 price=8.9
+2026-10-21 18:41:05 INFO  checkout event=checkout order=A-4490 client=manon.chevalier@example.org phone="06 39 98 49 61" address="29 rue Nationale, Tours" coupons=none total=44.50
+2026-10-21 18:41:29 INFO  payment  event=payment_ok order=A-4490 amount=44.50
+2026-10-21 18:41:46 INFO  auth     event=login order=A-4491 client=hugo.mercier@example.net ip=92.130.142.172
+2026-10-21 18:42:11 INFO  cart     event=add order=A-4491 sku=CHURROS qty=2 price=3.9
+2026-10-21 18:42:28 INFO  checkout event=checkout order=A-4491 client=hugo.mercier@example.net phone="06 39 98 19 75" address="74 rue Royale, Tours" coupons=none total=7.80
+2026-10-21 18:42:37 INFO  payment  event=payment_ok order=A-4491 amount=7.80
+2026-10-21 18:42:53 INFO  auth     event=login order=A-4492 client=manon.petit@example.com ip=92.145.216.106
+2026-10-21 18:43:16 INFO  cart     event=add order=A-4492 sku=HORCHATA qty=1 price=3.5
+2026-10-21 18:43:38 INFO  cart     event=coupon order=A-4492 code=TACOS10 discount=10.0
+2026-10-21 18:44:00 INFO  cart     event=coupon order=A-4492 code=TACOS10 discount=10.0
+2026-10-21 18:44:05 WARN  stock    event=low_stock sku=BURRITO left=3
+2026-10-21 18:44:13 INFO  checkout event=checkout order=A-4492 client=manon.petit@example.com phone="06 39 98 94 65" address="32 rue Nationale, Tours" coupons=TACOS10,TACOS10 total=-16.50
+2026-10-21 18:44:32 ERROR payment  event=payment_failed order=A-4492 client=manon.petit@example.com reason=invalid_amount
+2026-10-21 18:44:54 INFO  auth     event=login order=A-4493 client=sarah.girard@example.org ip=92.170.50.13
+2026-10-21 18:44:58 INFO  cart     event=add order=A-4493 sku=CHURROS qty=1 price=3.9
+2026-10-21 18:45:07 INFO  cart     event=coupon order=A-4493 code=TACOS10 discount=10.0
+2026-10-21 18:45:14 INFO  cart     event=coupon order=A-4493 code=TACOS10 discount=10.0
+2026-10-21 18:45:28 INFO  checkout event=checkout order=A-4493 client=sarah.girard@example.org phone="06 39 98 19 66" address="62 rue Nationale, Tours" coupons=TACOS10,TACOS10 total=-16.10
+2026-10-21 18:45:31 ERROR payment  event=payment_failed order=A-4493 client=sarah.girard@example.org reason=invalid_amount
+2026-10-21 18:45:45 ERROR mail     event=send_failed order=A-4493 reason=smtp_timeout retry=ok
+2026-10-21 18:45:53 INFO  auth     event=login order=A-4494 client=sarah.chevalier@example.fr ip=92.189.249.40
+2026-10-21 18:46:13 INFO  cart     event=add order=A-4494 sku=TACO-VEGGIE qty=2 price=7.5
+2026-10-21 18:46:38 INFO  cart     event=add order=A-4494 sku=HORCHATA qty=2 price=3.5
+2026-10-21 18:46:41 WARN  stock    event=low_stock sku=BURRITO left=2
+2026-10-21 18:46:48 INFO  checkout event=checkout order=A-4494 client=sarah.chevalier@example.fr phone="06 39 98 46 64" address="66 rue Nationale, Tours" coupons=none total=22.00
+2026-10-21 18:46:52 INFO  payment  event=payment_ok order=A-4494 amount=22.00
+2026-10-21 18:46:56 INFO  auth     event=login order=A-4495 client=yanis.fournier@example.com ip=92.174.20.159
+2026-10-21 18:47:06 INFO  cart     event=add order=A-4495 sku=HORCHATA qty=3 price=3.5
+2026-10-21 18:47:15 INFO  cart     event=add order=A-4495 sku=TACO-VEGGIE qty=3 price=7.5
+2026-10-21 18:47:21 INFO  cart     event=coupon order=A-4495 code=TACOS10 discount=10.0
+2026-10-21 18:47:33 INFO  checkout event=checkout order=A-4495 client=yanis.fournier@example.com phone="06 39 98 82 41" address="39 rue Colbert, Tours" coupons=TACOS10 total=23.00
+2026-10-21 18:47:37 INFO  payment  event=payment_ok order=A-4495 amount=23.00
+2026-10-21 18:47:57 WARN  api      event=slow_response route=/menu ms=2172
+2026-10-21 18:48:01 INFO  auth     event=login order=A-4496 client=ines.bonnet@example.org ip=92.116.178.226
+2026-10-21 18:48:08 INFO  cart     event=add order=A-4496 sku=NACHOS qty=3 price=4.2
+2026-10-21 18:48:19 INFO  checkout event=checkout order=A-4496 client=ines.bonnet@example.org phone="06 39 98 74 43" address="70 rue Royale, Tours" coupons=none total=12.60
+2026-10-21 18:48:40 INFO  payment  event=payment_ok order=A-4496 amount=12.60
+2026-10-21 18:48:45 INFO  auth     event=login order=A-4497 client=lina.moreau@example.net ip=92.117.135.30
+2026-10-21 18:49:06 INFO  cart     event=add order=A-4497 sku=NACHOS qty=3 price=4.2
+2026-10-21 18:49:29 INFO  checkout event=checkout order=A-4497 client=lina.moreau@example.net phone="06 39 98 94 23" address="44 rue Nationale, Tours" coupons=none total=12.60
+2026-10-21 18:49:51 INFO  payment  event=payment_ok order=A-4497 amount=12.60
+2026-10-21 18:49:53 INFO  auth     event=login order=A-4498 client=sarah.chevalier@example.com ip=92.154.141.12
+2026-10-21 18:50:00 INFO  cart     event=add order=A-4498 sku=TACO-VEGGIE qty=3 price=7.5
+2026-10-21 18:50:19 INFO  cart     event=add order=A-4498 sku=HORCHATA qty=3 price=3.5
+2026-10-21 18:50:43 INFO  checkout event=checkout order=A-4498 client=sarah.chevalier@example.com phone="06 39 98 21 91" address="15 rue Nationale, Tours" coupons=none total=33.00
+2026-10-21 18:50:49 INFO  payment  event=payment_ok order=A-4498 amount=33.00
+2026-10-21 18:50:52 INFO  auth     event=login order=A-4499 client=emma.bonnet@example.org ip=92.105.157.94
+2026-10-21 18:51:15 INFO  cart     event=add order=A-4499 sku=TACO-VEGGIE qty=2 price=7.5
+2026-10-21 18:51:34 INFO  cart     event=add order=A-4499 sku=TACO-XL qty=3 price=8.9
+2026-10-21 18:51:40 INFO  checkout event=checkout order=A-4499 client=emma.bonnet@example.org phone="06 39 98 65 26" address="80 rue Royale, Tours" coupons=none total=41.70
+2026-10-21 18:51:49 INFO  payment  event=payment_ok order=A-4499 amount=41.70
+2026-10-21 18:52:04 INFO  auth     event=login order=A-4500 client=nathan.chevalier@example.fr ip=92.194.170.201
+2026-10-21 18:52:28 INFO  cart     event=add order=A-4500 sku=NACHOS qty=2 price=4.2
+2026-10-21 18:52:37 WARN  stock    event=low_stock sku=TACO-XL left=4
+2026-10-21 18:52:50 INFO  checkout event=checkout order=A-4500 client=nathan.chevalier@example.fr phone="06 39 98 13 32" address="26 rue Colbert, Tours" coupons=none total=8.40
+2026-10-21 18:53:01 INFO  payment  event=payment_ok order=A-4500 amount=8.40
+2026-10-21 18:53:11 INFO  auth     event=login order=A-4501 client=yanis.moreau@example.org ip=92.135.35.248
+2026-10-21 18:53:34 INFO  cart     event=add order=A-4501 sku=HORCHATA qty=3 price=3.5
+2026-10-21 18:53:36 INFO  cart     event=add order=A-4501 sku=CHURROS qty=3 price=3.9
+2026-10-21 18:53:46 INFO  cart     event=coupon order=A-4501 code=TACOS10 discount=10.0
+2026-10-21 18:53:51 INFO  checkout event=checkout order=A-4501 client=yanis.moreau@example.org phone="06 39 98 61 52" address="34 rue Nationale, Tours" coupons=TACOS10 total=12.20
+2026-10-21 18:54:12 INFO  payment  event=payment_ok order=A-4501 amount=12.20
+2026-10-21 18:54:36 INFO  auth     event=login order=A-4502 client=camille.fournier@example.com ip=92.124.130.12
+2026-10-21 18:54:49 INFO  cart     event=add order=A-4502 sku=TACO-XL qty=2 price=8.9
+2026-10-21 18:55:12 INFO  cart     event=add order=A-4502 sku=BURRITO qty=2 price=9.8
+2026-10-21 18:55:37 INFO  checkout event=checkout order=A-4502 client=camille.fournier@example.com phone="06 39 98 59 83" address="85 rue Nationale, Tours" coupons=none total=37.40
+2026-10-21 18:55:48 INFO  payment  event=payment_ok order=A-4502 amount=37.40
+2026-10-21 18:56:02 INFO  auth     event=login order=A-4503 client=camille.fournier@example.net ip=92.124.215.171
+2026-10-21 18:56:16 INFO  cart     event=add order=A-4503 sku=CHURROS qty=3 price=3.9
+2026-10-21 18:56:27 INFO  checkout event=checkout order=A-4503 client=camille.fournier@example.net phone="06 39 98 80 26" address="1 rue Colbert, Tours" coupons=none total=11.70
+2026-10-21 18:56:35 INFO  payment  event=payment_ok order=A-4503 amount=11.70
+2026-10-21 18:57:00 INFO  auth     event=login order=A-4504 client=camille.girard@example.fr ip=92.127.242.204
+2026-10-21 18:57:11 INFO  cart     event=add order=A-4504 sku=HORCHATA qty=2 price=3.5
+2026-10-21 18:57:23 INFO  checkout event=checkout order=A-4504 client=camille.girard@example.fr phone="06 39 98 66 96" address="82 rue Royale, Tours" coupons=none total=7.00
+2026-10-21 18:57:27 INFO  payment  event=payment_ok order=A-4504 amount=7.00
+2026-10-21 18:57:44 INFO  auth     event=login order=A-4505 client=theo.lefevre@example.org ip=92.105.125.252
+2026-10-21 18:58:06 INFO  cart     event=add order=A-4505 sku=BURRITO qty=3 price=9.8
+2026-10-21 18:58:20 INFO  checkout event=checkout order=A-4505 client=theo.lefevre@example.org phone="06 39 98 28 13" address="50 rue Colbert, Tours" coupons=none total=29.40
+2026-10-21 18:58:29 INFO  payment  event=payment_ok order=A-4505 amount=29.40
+2026-10-21 18:58:48 INFO  auth     event=login order=A-4506 client=lucas.blanc@example.fr ip=92.189.237.13
+2026-10-21 18:58:54 INFO  cart     event=add order=A-4506 sku=TACO-XL qty=3 price=8.9
+2026-10-21 18:59:06 INFO  checkout event=checkout order=A-4506 client=lucas.blanc@example.fr phone="06 39 98 38 32" address="72 rue Royale, Tours" coupons=none total=26.70
+2026-10-21 18:59:22 INFO  payment  event=payment_ok order=A-4506 amount=26.70
+2026-10-21 18:59:31 INFO  auth     event=login order=A-4507 client=lina.fournier@example.fr ip=92.157.132.193
+2026-10-21 18:59:53 INFO  cart     event=add order=A-4507 sku=CHURROS qty=3 price=3.9
+2026-10-21 19:00:09 INFO  cart     event=add order=A-4507 sku=TACO-VEGGIE qty=3 price=7.5
+2026-10-21 19:00:20 INFO  cart     event=coupon order=A-4507 code=TACOS10 discount=10.0
+2026-10-21 19:00:39 INFO  checkout event=checkout order=A-4507 client=lina.fournier@example.fr phone="06 39 98 30 70" address="43 rue Colbert, Tours" coupons=TACOS10 total=24.20
+2026-10-21 19:00:43 INFO  payment  event=payment_ok order=A-4507 amount=24.20
+2026-10-21 19:00:59 INFO  auth     event=login order=A-4508 client=chloe.rousseau@example.org ip=92.152.169.139
+2026-10-21 19:01:07 INFO  cart     event=add order=A-4508 sku=BURRITO qty=1 price=9.8
+2026-10-21 19:01:22 INFO  cart     event=coupon order=A-4508 code=TACOS10 discount=10.0
+2026-10-21 19:01:36 INFO  cart     event=coupon order=A-4508 code=TACOS10 discount=10.0
+2026-10-21 19:01:38 INFO  checkout event=checkout order=A-4508 client=chloe.rousseau@example.org phone="06 39 98 18 63" address="75 rue Royale, Tours" coupons=TACOS10,TACOS10 total=-10.20
+2026-10-21 19:01:58 ERROR payment  event=payment_failed order=A-4508 client=chloe.rousseau@example.org reason=invalid_amount
+2026-10-21 19:02:11 ERROR mail     event=send_failed order=A-4508 reason=smtp_timeout retry=ok
+2026-10-21 19:02:20 INFO  auth     event=login order=A-4509 client=theo.blanc@example.fr ip=92.195.112.125
+2026-10-21 19:02:22 INFO  cart     event=add order=A-4509 sku=BURRITO qty=3 price=9.8
+2026-10-21 19:02:45 INFO  cart     event=add order=A-4509 sku=BURRITO qty=3 price=9.8
+2026-10-21 19:02:51 INFO  checkout event=checkout order=A-4509 client=theo.blanc@example.fr phone="06 39 98 63 78" address="22 rue Colbert, Tours" coupons=none total=58.80
+2026-10-21 19:03:12 INFO  payment  event=payment_ok order=A-4509 amount=58.80
+2026-10-21 19:03:28 INFO  auth     event=login order=A-4510 client=emma.lambert@example.com ip=92.154.69.222
+2026-10-21 19:03:42 INFO  cart     event=add order=A-4510 sku=TACO-XL qty=3 price=8.9
+2026-10-21 19:03:52 INFO  checkout event=checkout order=A-4510 client=emma.lambert@example.com phone="06 39 98 20 92" address="44 rue Colbert, Tours" coupons=none total=26.70
+2026-10-21 19:04:07 INFO  payment  event=payment_ok order=A-4510 amount=26.70
+2026-10-21 19:04:29 INFO  auth     event=login order=A-4511 client=lea.rousseau@example.com ip=92.183.35.200
+2026-10-21 19:04:37 INFO  cart     event=add order=A-4511 sku=TACO-XL qty=2 price=8.9
+2026-10-21 19:04:54 INFO  checkout event=checkout order=A-4511 client=lea.rousseau@example.com phone="06 39 98 54 38" address="31 rue Nationale, Tours" coupons=none total=17.80
+2026-10-21 19:05:17 INFO  payment  event=payment_ok order=A-4511 amount=17.80
+2026-10-21 19:05:24 INFO  auth     event=login order=A-4512 client=zoe.rousseau@example.net ip=92.177.58.200
+2026-10-21 19:05:44 INFO  cart     event=add order=A-4512 sku=NACHOS qty=1 price=4.2
+2026-10-21 19:05:46 INFO  cart     event=coupon order=A-4512 code=TACOS10 discount=10.0
+2026-10-21 19:05:57 INFO  cart     event=coupon order=A-4512 code=TACOS10 discount=10.0
+2026-10-21 19:06:11 INFO  checkout event=checkout order=A-4512 client=zoe.rousseau@example.net phone="06 39 98 57 31" address="117 rue Colbert, Tours" coupons=TACOS10,TACOS10 total=-15.80
+2026-10-21 19:06:35 ERROR payment  event=payment_failed order=A-4512 client=zoe.rousseau@example.net reason=invalid_amount
+2026-10-21 19:06:54 INFO  auth     event=login order=A-4513 client=yanis.petit@example.net ip=92.115.21.89
+2026-10-21 19:06:58 INFO  cart     event=add order=A-4513 sku=HORCHATA qty=3 price=3.5
+2026-10-21 19:07:00 INFO  cart     event=add order=A-4513 sku=CHURROS qty=3 price=3.9
+2026-10-21 19:07:13 INFO  checkout event=checkout order=A-4513 client=yanis.petit@example.net phone="06 39 98 97 86" address="14 rue Colbert, Tours" coupons=none total=22.20
+2026-10-21 19:07:35 INFO  payment  event=payment_ok order=A-4513 amount=22.20
+2026-10-21 19:07:50 INFO  auth     event=login order=A-4514 client=chloe.fournier@example.org ip=92.134.247.120
+2026-10-21 19:07:54 INFO  cart     event=add order=A-4514 sku=NACHOS qty=2 price=4.2
+2026-10-21 19:08:03 INFO  cart     event=add order=A-4514 sku=NACHOS qty=3 price=4.2
+2026-10-21 19:08:15 INFO  checkout event=checkout order=A-4514 client=chloe.fournier@example.org phone="06 39 98 76 93" address="86 rue Colbert, Tours" coupons=none total=21.00
+2026-10-21 19:08:17 INFO  payment  event=payment_ok order=A-4514 amount=21.00
+2026-10-21 19:08:19 INFO  auth     event=login order=A-4515 client=enzo.lefevre@example.net ip=92.135.141.143
+2026-10-21 19:08:44 INFO  cart     event=add order=A-4515 sku=TACO-XL qty=2 price=8.9
+2026-10-21 19:09:01 INFO  checkout event=checkout order=A-4515 client=enzo.lefevre@example.net phone="06 39 98 43 53" address="31 rue Royale, Tours" coupons=none total=17.80
+2026-10-21 19:09:23 INFO  payment  event=payment_ok order=A-4515 amount=17.80
+2026-10-21 19:09:46 INFO  auth     event=login order=A-4516 client=lea.petit@example.net ip=92.188.124.79
+2026-10-21 19:10:03 INFO  cart     event=add order=A-4516 sku=CHURROS qty=2 price=3.9
+2026-10-21 19:10:22 INFO  cart     event=coupon order=A-4516 code=TACOS10 discount=10.0
+2026-10-21 19:10:40 INFO  cart     event=coupon order=A-4516 code=TACOS10 discount=10.0
+2026-10-21 19:10:52 INFO  checkout event=checkout order=A-4516 client=lea.petit@example.net phone="06 39 98 38 61" address="96 rue Royale, Tours" coupons=TACOS10,TACOS10 total=-12.20
+2026-10-21 19:11:05 ERROR payment  event=payment_failed order=A-4516 client=lea.petit@example.net reason=invalid_amount
+2026-10-21 19:11:13 INFO  auth     event=login order=A-4517 client=sarah.lefevre@example.com ip=92.115.94.50
+2026-10-21 19:11:18 INFO  cart     event=add order=A-4517 sku=NACHOS qty=3 price=4.2
+2026-10-21 19:11:27 INFO  cart     event=add order=A-4517 sku=TACO-VEGGIE qty=3 price=7.5
+2026-10-21 19:11:33 INFO  checkout event=checkout order=A-4517 client=sarah.lefevre@example.com phone="06 39 98 34 50" address="91 rue Royale, Tours" coupons=none total=35.10
+2026-10-21 19:11:43 INFO  payment  event=payment_ok order=A-4517 amount=35.10
+2026-10-21 19:12:02 WARN  api      event=slow_response route=/menu ms=1011
+2026-10-21 19:12:19 INFO  auth     event=login order=A-4518 client=chloe.faure@example.fr ip=92.173.145.121
+2026-10-21 19:12:22 INFO  cart     event=add order=A-4518 sku=NACHOS qty=2 price=4.2
+2026-10-21 19:12:27 INFO  cart     event=add order=A-4518 sku=NACHOS qty=3 price=4.2
+2026-10-21 19:12:49 INFO  checkout event=checkout order=A-4518 client=chloe.faure@example.fr phone="06 39 98 23 11" address="10 rue Royale, Tours" coupons=none total=21.00
+2026-10-21 19:13:12 INFO  payment  event=payment_ok order=A-4518 amount=21.00
+2026-10-21 19:13:32 WARN  api      event=slow_response route=/menu ms=1205
+2026-10-21 19:13:50 INFO  auth     event=login order=A-4519 client=ines.lefevre@example.com ip=92.177.115.199
+2026-10-21 19:14:01 INFO  cart     event=add order=A-4519 sku=BURRITO qty=3 price=9.8
+2026-10-21 19:14:12 INFO  cart     event=add order=A-4519 sku=CHURROS qty=3 price=3.9
+2026-10-21 19:14:20 WARN  stock    event=low_stock sku=HORCHATA left=1
+2026-10-21 19:14:30 INFO  checkout event=checkout order=A-4519 client=ines.lefevre@example.com phone="06 39 98 81 63" address="81 rue Nationale, Tours" coupons=none total=41.10
+2026-10-21 19:14:53 INFO  payment  event=payment_ok order=A-4519 amount=41.10
+2026-10-21 19:14:56 INFO  auth     event=login order=A-4520 client=noah.petit@example.org ip=92.157.240.75
+2026-10-21 19:15:20 INFO  cart     event=add order=A-4520 sku=NACHOS qty=3 price=4.2
+2026-10-21 19:15:29 INFO  checkout event=checkout order=A-4520 client=noah.petit@example.org phone="06 39 98 10 62" address="10 rue Royale, Tours" coupons=none total=12.60
+2026-10-21 19:15:39 INFO  payment  event=payment_ok order=A-4520 amount=12.60
+2026-10-21 19:15:49 INFO  auth     event=login order=A-4521 client=manon.fournier@example.com ip=92.182.76.233
+2026-10-21 19:15:56 INFO  cart     event=add order=A-4521 sku=TACO-XL qty=2 price=8.9
+2026-10-21 19:16:07 INFO  checkout event=checkout order=A-4521 client=manon.fournier@example.com phone="06 39 98 79 38" address="106 rue Royale, Tours" coupons=none total=17.80
+2026-10-21 19:16:23 INFO  payment  event=payment_ok order=A-4521 amount=17.80
+2026-10-21 19:16:38 INFO  auth     event=login order=A-4522 client=jade.garcia@example.fr ip=92.176.20.228
+2026-10-21 19:16:40 INFO  cart     event=add order=A-4522 sku=CHURROS qty=3 price=3.9
+2026-10-21 19:17:03 INFO  cart     event=add order=A-4522 sku=TACO-XL qty=2 price=8.9
+2026-10-21 19:17:13 INFO  checkout event=checkout order=A-4522 client=jade.garcia@example.fr phone="06 39 98 66 20" address="3 rue Royale, Tours" coupons=none total=29.50
+2026-10-21 19:17:33 INFO  payment  event=payment_ok order=A-4522 amount=29.50
+2026-10-21 19:17:50 WARN  api      event=slow_response route=/menu ms=1258
+2026-10-21 19:17:54 INFO  auth     event=login order=A-4523 client=zoe.chevalier@example.net ip=92.155.251.249
+2026-10-21 19:18:06 INFO  cart     event=add order=A-4523 sku=NACHOS qty=3 price=4.2
+2026-10-21 19:18:13 INFO  cart     event=add order=A-4523 sku=NACHOS qty=2 price=4.2
+2026-10-21 19:18:27 INFO  checkout event=checkout order=A-4523 client=zoe.chevalier@example.net phone="06 39 98 33 84" address="37 rue Royale, Tours" coupons=none total=21.00
+2026-10-21 19:18:46 INFO  payment  event=payment_ok order=A-4523 amount=21.00
+2026-10-21 19:18:58 WARN  api      event=slow_response route=/menu ms=1080
+2026-10-21 19:19:01 INFO  auth     event=login order=A-4524 client=lucas.blanc@example.fr ip=92.184.236.106
+2026-10-21 19:19:22 INFO  cart     event=add order=A-4524 sku=CHURROS qty=3 price=3.9
+2026-10-21 19:19:25 INFO  checkout event=checkout order=A-4524 client=lucas.blanc@example.fr phone="06 39 98 75 10" address="81 rue Colbert, Tours" coupons=none total=11.70
+2026-10-21 19:19:33 INFO  payment  event=payment_ok order=A-4524 amount=11.70
+2026-10-21 19:19:40 INFO  auth     event=login order=A-4525 client=theo.girard@example.fr ip=92.180.122.182
+2026-10-21 19:19:59 INFO  cart     event=add order=A-4525 sku=CHURROS qty=2 price=3.9
+2026-10-21 19:20:08 INFO  cart     event=add order=A-4525 sku=BURRITO qty=2 price=9.8
+2026-10-21 19:20:30 INFO  checkout event=checkout order=A-4525 client=theo.girard@example.fr phone="06 39 98 25 13" address="60 rue Nationale, Tours" coupons=none total=27.40
+2026-10-21 19:20:36 INFO  payment  event=payment_ok order=A-4525 amount=27.40
+2026-10-21 19:20:55 INFO  auth     event=login order=A-4526 client=lina.rousseau@example.net ip=92.160.124.117
+2026-10-21 19:21:16 INFO  cart     event=add order=A-4526 sku=BURRITO qty=2 price=9.8
+2026-10-21 19:21:26 INFO  checkout event=checkout order=A-4526 client=lina.rousseau@example.net phone="06 39 98 63 71" address="111 rue Nationale, Tours" coupons=none total=19.60
+2026-10-21 19:21:41 INFO  payment  event=payment_ok order=A-4526 amount=19.60
+2026-10-21 19:21:47 INFO  auth     event=login order=A-4527 client=sarah.mercier@example.com ip=92.175.250.222
+2026-10-21 19:22:00 INFO  cart     event=add order=A-4527 sku=CHURROS qty=3 price=3.9
+2026-10-21 19:22:16 INFO  cart     event=add order=A-4527 sku=NACHOS qty=3 price=4.2
+2026-10-21 19:22:36 INFO  checkout event=checkout order=A-4527 client=sarah.mercier@example.com phone="06 39 98 46 48" address="90 rue Nationale, Tours" coupons=none total=24.30
+2026-10-21 19:22:50 INFO  payment  event=payment_ok order=A-4527 amount=24.30
+2026-10-21 19:22:53 INFO  auth     event=login order=A-4528 client=hugo.roux@example.fr ip=92.184.77.127
+2026-10-21 19:22:58 INFO  cart     event=add order=A-4528 sku=CHURROS qty=3 price=3.9
+2026-10-21 19:23:16 INFO  checkout event=checkout order=A-4528 client=hugo.roux@example.fr phone="06 39 98 58 59" address="57 rue Nationale, Tours" coupons=none total=11.70
+2026-10-21 19:23:32 INFO  payment  event=payment_ok order=A-4528 amount=11.70
+2026-10-21 19:23:47 WARN  api      event=slow_response route=/menu ms=1195
+2026-10-21 19:23:51 INFO  auth     event=login order=A-4529 client=chloe.petit@example.fr ip=92.179.203.167
+2026-10-21 19:24:03 INFO  cart     event=add order=A-4529 sku=HORCHATA qty=3 price=3.5
+2026-10-21 19:24:22 INFO  cart     event=add order=A-4529 sku=HORCHATA qty=3 price=3.5
+2026-10-21 19:24:26 INFO  cart     event=coupon order=A-4529 code=TACOS10 discount=10.0
+2026-10-21 19:24:35 INFO  checkout event=checkout order=A-4529 client=chloe.petit@example.fr phone="06 39 98 43 53" address="88 rue Colbert, Tours" coupons=TACOS10 total=11.00
+2026-10-21 19:25:00 INFO  payment  event=payment_ok order=A-4529 amount=11.00
+2026-10-21 19:25:03 INFO  auth     event=login order=A-4530 client=lucas.girard@example.org ip=92.103.23.84
+2026-10-21 19:25:18 INFO  cart     event=add order=A-4530 sku=NACHOS qty=3 price=4.2
+2026-10-21 19:25:36 INFO  cart     event=add order=A-4530 sku=TACO-VEGGIE qty=2 price=7.5

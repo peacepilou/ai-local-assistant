@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tacos Tours · Analyse des logs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div class="brand">
+          <!-- TODO 1 : les initiales, le titre et le sous-titre de ta fenêtre -->
+          <span class="avatar" aria-hidden="true">TT</span>
+          <div>
+            <h1 class="assistant-name">Analyse des logs</h1>
+            <p class="assistant-role">Tacos Tours, sur ton modèle local</p>
+          </div>
+        </div>
+        <button type="button" id="reset-button" class="reset-button">Nouvelle conversation</button>
+      </header>
+
+      <p class="local-badge">
+        <span class="dot" aria-hidden="true"></span>
+        Modèle local : rien de ce que tu colles ici ne quitte ta machine.
+      </p>
+
+      <section id="chat" class="chat" aria-live="polite"></section>
+
+      <div id="suggestions" class="suggestions"></div>
+
+      <form id="chat-form" class="composer">
+        <label for="message-input" class="visually-hidden">Ton message</label>
+        <textarea
+          id="message-input"
+          rows="2"
+          placeholder="Colle tes logs ou pose ta question… (Entrée pour envoyer, Maj + Entrée pour aller à la ligne)"
+          required
+        ></textarea>
+        <button type="submit" id="send-button">Envoyer</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
