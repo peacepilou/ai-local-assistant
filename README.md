@@ -91,8 +91,6 @@ Passe `num_ctx` à `16384`, recrée le modèle avec `ollama create`, clique sur 
 
 Une fois la cause trouvée, **vérifie-la toi-même** : ouvre le fichier de logs, et retrouve les lignes qu'il cite. Un modèle peut se tromper avec aplomb.
 
-Note dans `investigation.md` : la cause, les lignes qui la prouvent, et ce que tu as changé pour que le modèle y arrive.
-
 ## Étape 5 : corrige le bug
 
 La cause est dans `src/cart.js`. Avant de toucher au code, lance le test :
@@ -125,7 +123,7 @@ Ce que le développeur va réparer : une phrase.
 
 Recrée ton modèle après chaque changement (`ollama create`, puis **Nouvelle conversation**). Tu peux aussi jouer sur `temperature` : que se passe-t-il à `0` ? À `1.5` ?
 
-Puis **attaque-le** avec ces quatre messages, et note ses réponses dans `investigation.md` :
+Puis **attaque-le** avec ces quatre messages :
 
 1. une question normale sur les logs ;
 2. une question hors sujet (« Quelle est la capitale du Pérou ? ») ;
